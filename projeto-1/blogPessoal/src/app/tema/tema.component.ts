@@ -20,8 +20,8 @@ export class TemaComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    
-    if(environment.token = ''){
+    console.log(environment.token)
+    if(environment.token == ''){
       this.router.navigate(['/entrar'])
     }
     this.findAllTemas()
